@@ -89,73 +89,23 @@ function draw() {
   let nLines = 125;
   for (let i = 0; i < nLines; i++) {
 
-
-    // let pick1 = Math.random();
-    // if (pick1 <= 0.3) {
-    //   let x1 = 288 +  (0.25 * radius) * Math.cos(angle1);
-    //   // return {x1};
-    // } else if (pick1 <= 0.6) {
-    //   let x1 = 288 + ((1.25 / 2) * radius) * Math.cos(angle1);
-    //   // return {x1};
-    // } else {
-    //   let x1 = 288 + radius * Math.cos(angle1);
-    //   // return {x1};
-    // }
-
-    // let pick2 = Math.random();
-    // if (pick2 <= 0.3) {
-    //   let y1 = 192 + (0.25 * radius) * Math.sin(angle1);
-    //   // return {y1};
-    // } else if (pick2 <= 0.6) {
-    //   let y1 = 192 + ((1.25 / 2) * radius) * Math.sin(angle1);
-    //   // return {y1};
-    // } else {
-    //   let y1 = 192 + radius * Math.sin(angle1);
-    //   // return {y1};
-    // }
-
-
-    // let pick3 = Math.random();
-    // if (pick3 <= 0.3) {
-    //   let x2 = 288 + (0.25 * radius) * Math.cos(angle2);
-    //   // return {x2};
-    // } else if (pick3 <= 0.6) {
-    //   let x2 = 288 + ((1.25 / 2) * radius) * Math.cos(angle2);
-    //   // return {x2};
-    // } else {
-    //   let x2 = 288 + radius * Math.cos(angle2);
-    //   // return {x2};
-    // }
-
-    // let pick4 = Math.random();
-    // if (pick4 <= 0.3) {
-    //   let y2 = 192 + (0.25 * radius) * Math.sin(angle2);
-    //   // return {y2};
-    // } else if (pick4 <= 0.6) {
-    //   let y2 = 192 + ((1.25 / 2) * radius) * Math.sin(angle2);
-    //   // return {y2};
-    // } else {
-    //   let y2 = 192 + radius * Math.sin(angle2);
-    //   // return {y2};
-    // }
-
     let angle1 = Math.random() * 2 * Math.PI;
     let random1 = Math.floor(Math.random() * circleNumb.length);
-    let x1 = 288 + ((random1, circleNumb[random1])*radius) * Math.cos(angle1);
+    let x1 = 288 + ((random1, circleNumb[random1]) * radius) * Math.cos(angle1);
     // let random2 = Math.floor(Math.random() * circleNumb.length);
-    let y1 = 192 + ((random1, circleNumb[random1])*radius) * Math.sin(angle1);
-    
+    let y1 = 192 + ((random1, circleNumb[random1]) * radius) * Math.sin(angle1);
+
 
     let angle2 = Math.random() * 2 * Math.PI;
     let random3 = Math.floor(Math.random() * circleNumb.length);
-    let x2 = 288 + ((random3, circleNumb[random3])*radius) * Math.cos(angle2);
+    let x2 = 288 + ((random3, circleNumb[random3]) * radius) * Math.cos(angle2);
     // let random4 = Math.floor(Math.random() * circleNumb.length);
-    let y2 = 192 + ((random3, circleNumb[random3])*radius) * Math.sin(angle2);
+    let y2 = 192 + ((random3, circleNumb[random3]) * radius) * Math.sin(angle2);
 
-    if ((random1, circleNumb[random1]) == "1"){
+    if ((random1, circleNumb[random1]) == "1") {
       cr1 = 255;
       cb1 = 25;
-    } else if ((random1, circleNumb[random1]) == "0.62"){
+    } else if ((random1, circleNumb[random1]) == "0.62") {
       cr1 = 125;
       cb1 = 125;
     } else if ((random1, circleNumb[random1]) == "0.25") {
@@ -163,18 +113,18 @@ function draw() {
       cb1 = 255;
     }
 
-        if ((random3, circleNumb[random3]) == "1"){
+    if ((random3, circleNumb[random3]) == "1") {
       cr2 = 255;
       cb2 = 25;
-    } else if ((random3, circleNumb[random3]) == "0.62"){
+    } else if ((random3, circleNumb[random3]) == "0.62") {
       cr2 = 125;
       cb2 = 125;
     } else if ((random3, circleNumb[random3]) == "0.25") {
       cr2 = 50;
       cb2 = 255;
     }
-
-    stroke((cr1+cr2)/2, 0, (cb1+cb2)/2);
+    stroke(0);
+    // stroke((cr1+cr2)/2, 0, (cb1+cb2)/2, 255);
     line(x1, y1, x2, y2);
 
     stroke(0);
