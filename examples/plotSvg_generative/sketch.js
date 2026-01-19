@@ -68,7 +68,7 @@ function initiateSvgExport() {
 function draw() {
   randomSeed(myRandomSeed);
   background(255);
-  strokeWeight(1);
+  strokeWeight(0.5);
   stroke(0);
   noFill();
 
@@ -86,7 +86,7 @@ function draw() {
 
   // fill(0, 0, 0)
   // Draw 100 random lines: some red, some black.
-  let nLines = 125;
+  let nLines = 200;
   for (let i = 0; i < nLines; i++) {
 
     let angle1 = Math.random() * 2 * Math.PI;
